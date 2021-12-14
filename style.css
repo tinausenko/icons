@@ -29,3 +29,38 @@ a.arrow:hover::after{
     transition-duration: 1s; 
     transform: translateX(5px);
 }
+a.hexagon {
+    display: inline-block;
+    padding-right: 50px;
+    position: relative;
+    text-decoration: none;
+  }
+  a.hexagon::after {
+    background: url('/img/long-arrow-alt-right-solid.svg') center center no-repeat;
+    content: "";
+    width: 21px;
+    height: 18px;
+    right: 1.3rem;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+  }
+  a.hexagon:before {
+    background: url('/img/border-style-solid.svg') center top no-repeat;
+    border-top: 0;
+    content: " ";
+    width: 30px;
+    height: 35px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 1rem;
+    position: absolute;
+    transition-duration: 0.25s;
+  
+  }
+  a.hexagon:hover::before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
