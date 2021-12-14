@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: gray;
+}
+.container{
+    margin: 20px auto;
+    padding: 15px;
+    height: 500px;
+    width: 800px;
+    background-color: lightgray;
+    box-shadow: 0 1px 4px 0 black;
+}
+a.arrow{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    
+}
+a.arrow::after{
+    content:' >';
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a.arrow:hover::after{
+    transition-duration: 1s; 
+    transform: translateX(5px);
+}
